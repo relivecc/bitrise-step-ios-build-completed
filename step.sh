@@ -1,7 +1,9 @@
 #!/bin/bash
 set -ex
 
-echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
+echo "This is the value specified for the input 'app_test_notes': ${app_test_notes}"
+echo "This is the value specified for the input 'app_build_number': ${app_build_number}"
+echo "This is the value specified for the input 'app_version': ${app_version}"
 
 #
 # --- Export Environment Variables for other Steps:

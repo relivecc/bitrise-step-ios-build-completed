@@ -64,16 +64,24 @@ toolkit:
 
 
 inputs:
-  - example_step_input:
+  - app_version: $APP_VERSION
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
-      description: |
-        Description of this input.
-        Can be Markdown formatted text.
+      title: "App version"
+      summary: Version of the app that is just uploaded to Test flight.
       is_expand: true
-      is_required: true
-      value_options: [42, 55]
+      is_required: false
+  - app_build_number: $APP_BUILD_NUMBER
+    opts:
+      title: "App build number"
+      summary: Build number of the app that is just uploaded to Test flight.
+      is_expand: true
+      is_required: false
+  - app_test_notes: $APP_TEST_NOTES
+    opts:
+      title: "Test notes"
+      summary: Test notes that should be uploaded to test flight for this build.
+      is_expand: true
+      is_required: false
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
