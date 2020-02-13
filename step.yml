@@ -64,24 +64,22 @@ toolkit:
 
 
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - example_step_input:
     opts:
       title: "Example Step Input"
       summary: Summary. No more than 2-3 sentences.
       description: |
         Description of this input.
-
         Can be Markdown formatted text.
       is_expand: true
       is_required: true
-      value_options: []
+      value_options: [42, 55]
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
     opts:
       title: "Example Step Output"
-      summary: Summary. No more than 2-3 sentences.
+      summary: This step has the current time as output
       description: |
         Description of this output.
-
         Can be Markdown formatted text.

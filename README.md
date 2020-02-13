@@ -51,8 +51,8 @@ If you want to use your step in your project's `bitrise.yml`:
 2. reference it in your `bitrise.yml` with the `git::PUBLIC-GIT-CLONE-URL@BRANCH` step reference style:
 
 ```
-- git::https://github.com/user/my-step.git@branch:
-   title: My step
+- git::https://github.com/relivecc/bitrise-step-ios-build-completed.git@master:
+   title: iOS build completed
    inputs:
    - my_input_1: "my value 1"
    - my_input_2: "my value 2"
